@@ -1,0 +1,31 @@
+.navbar{
+    background-color: #fed5d9 !important;
+}
+.homeImage {
+    width: 98.5vw !important;
+    height: 100vh !important;
+    margin: auto !important;
+    background-image: url('../images/nadiasgarden.jpg') !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    
+}
+
+#warning {
+    margin-top: 5px;
+    background-color: lightcoral;
+    color: aliceblue;
+    margin: auto;
+    height: 40px;
+    text-align: center;
+}
+
+#success {
+    margin-top: 5px;
+    background-color: darkseagreen ;
+    color:rgb(231, 200, 158);
+    margin: auto;
+    height: 40px;
+    text-align: center;
+}
