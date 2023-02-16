@@ -57,12 +57,26 @@
         <!-- Left links -->
   
         <div class="d-flex align-items-center">
-          <button type="button" class="btn btn-link px-3 me-2">
-            Login
-          </button>
-          <button type="button" class="btn btn-primary me-3">
-            Sign up for free
-          </button>
+            
+
+            {% if user.is_authenticated %}
+            <a
+            class="btn btn-dark px-3"
+            href="{% url 'logout' %}"
+            role="button"
+            >Logout</a>
+
+            <button type="button" class="btn btn-primary me-3">
+            {{request.user.username}}
+            </button>
+            {% else %}
+            <a
+            class="btn btn-dark px-3"
+            href="{% url 'user_login' %}"
+            role="button"
+            >Login</a>
+            {% endif %}
+          
           <a
             class="btn btn-dark px-3"
             href='/'
