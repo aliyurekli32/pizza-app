@@ -1,0 +1,25 @@
+{% extends 'pizzas/base.html' %}
+
+
+{% block content %}
+
+<div class="col-lg-4 mx-auto p-0 shadow mt-5 ">
+
+    <div class="alert alert-warning text-center">
+        <h2>Login</h2>
+    </div>
+
+    <div class="p-4 d-flex align-items-center ">
+        
+        <form action="" method="POST">
+            {% csrf_token%} 
+            {{ form }}
+            <hr>
+            <input type="submit" value="LOGIN" class="btn btn-success">
+        </form>
+
+    </div>
+</div>
+    
+{% endblock content %}
+    
